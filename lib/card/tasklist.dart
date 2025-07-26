@@ -8,13 +8,13 @@ import '../global.dart';
 
 class TaskList extends StatelessWidget {
   final bool selected; // filter for completed or not
-  final String? givenPriority; // optional priority filter
+  final String givenPriority; // optional priority filter
 
   final String searchable ;
   const TaskList({
     super.key,
     required this.selected,
-    this.givenPriority,this.searchable=""
+    this.givenPriority="",this.searchable=""
   });
 
   @override
@@ -25,11 +25,19 @@ class TaskList extends StatelessWidget {
         .collection("Users")
         .doc(uid)
         .collection("Tasks")
-        .where("title",isLessThanOrEqualTo: searchable): FirebaseFirestore.instance
+        .where("title",isEqualTo: searchable).orderBy("dueDate",descending: false):
+
+    (givenPriority.isNotEmpty?FirebaseFirestore.instance
         .collection("Users")
         .doc(uid)
         .collection("Tasks")
-        .where("completed", isEqualTo: selected);
+        .where("priority", isEqualTo: givenPriority).orderBy("dueDate",descending: false):
+
+    FirebaseFirestore.instance
+        .collection("Users")
+        .doc(uid)
+        .collection("Tasks")
+        .where("completed", isEqualTo: selected).orderBy("dueDate",descending: false));
 
     if (givenPriority != null && givenPriority!.isNotEmpty) {
       final priorityInt = int.tryParse(givenPriority!);

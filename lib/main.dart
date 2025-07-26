@@ -3,19 +3,27 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'bloc/userbloack_bloc.dart';
 import 'firebase_options.dart';
 import 'login/onboarding.dart';
 import 'main_navigation/navigation.dart';
-
+import 'login/bloc/login_bloc.dart' as ds;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(const MyApp());
+
+  runApp(
+    MultiBlocProvider(providers: [
+      BlocProvider(create: (_)=>UserBloc()),
+      BlocProvider(create: (_)=>ds.UserBloc())
+    ], child: MyApp())
+  );
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -28,7 +36,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Splash(),
+      debugShowCheckedModeBanner: false,
+      home:  Splash(),
     );
   }
 }

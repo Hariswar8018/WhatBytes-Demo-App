@@ -16,12 +16,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
   int i = 0;
 
   void proceed(){
-    if(i==2){
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => Login()));
-    }else{
-      i+=1;
-    }
+
   }
 
   @override
