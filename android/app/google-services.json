@@ -1,0 +1,154 @@
+{
+  "project_info": {
+    "project_number": "1052964691730",
+    "project_id": "starwish",
+    "storage_bucket": "starwish.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052964691730:android:c44ae07f68493c16b55dcb",
+        "android_client_info": {
+          "package_name": "com.heavenonthisearth.ignou_bscg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052964691730-iufbd7jovle48g9tct5is4kt7nlvefgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm010CneRzj-LJMKW36OJLF1qgtCtRsHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052964691730-ckcs56ovto49qksta6g6k4jccatm5ecr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1052964691730-23265bnpndtf066raq48ev44862qn7eu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.heavenonthisearth.ignouBscg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052964691730:android:48cfa4b1f43d0720b55dcb",
+        "android_client_info": {
+          "package_name": "com.starwish.iitm_studet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052964691730-iufbd7jovle48g9tct5is4kt7nlvefgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm010CneRzj-LJMKW36OJLF1qgtCtRsHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052964691730-ckcs56ovto49qksta6g6k4jccatm5ecr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1052964691730-23265bnpndtf066raq48ev44862qn7eu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.heavenonthisearth.ignouBscg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052964691730:android:25c56b49d5bd4046b55dcb",
+        "android_client_info": {
+          "package_name": "com.starwish.story_image_ai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052964691730-iufbd7jovle48g9tct5is4kt7nlvefgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm010CneRzj-LJMKW36OJLF1qgtCtRsHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052964691730-ckcs56ovto49qksta6g6k4jccatm5ecr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1052964691730-23265bnpndtf066raq48ev44862qn7eu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.heavenonthisearth.ignouBscg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052964691730:android:0aef472b0f520b5fb55dcb",
+        "android_client_info": {
+          "package_name": "com.starwish.task_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052964691730-iufbd7jovle48g9tct5is4kt7nlvefgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm010CneRzj-LJMKW36OJLF1qgtCtRsHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052964691730-ckcs56ovto49qksta6g6k4jccatm5ecr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1052964691730-23265bnpndtf066raq48ev44862qn7eu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.heavenonthisearth.ignouBscg"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
